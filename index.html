@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanStyle - Tienda de Ropa Urbana</title>
+    <meta name="description" content="Tienda online de ropa urbana con las últimas tendencias en moda streetwear">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-white font-sans">
+    <!-- Header -->
+    <header class="bg-black text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4">
+            <!-- Top Bar -->
+            <div class="border-b border-gray-700 py-2 text-sm hidden md:block">
+                <div class="flex justify-between items-center">
+                    <div class="flex space-x-4">
+                        <span>Envío gratis en compras superiores a $50</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-300">Seguimiento de pedido</a>
+                        <a href="#" class="hover:text-gray-300">Ayuda</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="py-4">
+                <div class="flex items-center justify-between">
+                    <!-- Logo -->
+                    <div class="flex items-center">
+                        <a href="#" class="text-2xl font-bold">URBANSTYLE</a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#" class="hover:text-gray-300 transition-colors">Inicio</a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Hombre</a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Mujer</a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Nuevo</a>
+                        <a href="#" class="hover:text-gray-300 transition-colors">Ofertas</a>
+                    </div>
+
+                    <!-- Search Bar -->
+                    <div class="hidden md:flex flex-1 max-w-md mx-8">
+                        <div class="relative w-full">
+                            <input 
+                                type="text" 
+                                placeholder="Buscar productos..." 
+                                class="w-full px-4 py-2 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
+                            >
+                            <button class="absolute right-3 top-2 text-gray-400 hover:text-white">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- User Actions -->
+                    <div class="flex items-center space-x-4">
+                        <button class="md:hidden text-white">
+                            <i class="fas fa-bars text-xl"></i>
+                        </button>
+                        <button class="hidden md:block hover:text-gray-300">
+                            <i class="fas fa-search text-xl"></i>
+                        </button>
+                        <button class="hover:text-gray-300 relative">
+                            <i class="fas fa-user text-xl"></i>
+                        </button>
+                        <button class="hover:text-gray-300 relative">
+                            <i class="fas fa-heart text-xl"></i>
+                        </button>
+                        <button class="hover:text-gray-300 relative">
+                            <i class="fas fa-shopping-bag text-xl"></i>
+                            <span class="absolute -top-2 -right-2 bg-white text-black text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">3</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-black text-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl lg:text-6xl font-bold mb-6">STREETWEAR ESENCIAL</h1>
+                    <p class="text-xl mb-8 text-gray-300">Descubre la nueva colección de ropa urbana diseñada para la ciudad.</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-white text-black px-8 py-3 font-semibold hover:bg-gray-200 transition-colors">
+                            Ver Colección
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 font-semibold hover:bg-white hover:text-black transition-colors">
+                            Ofertas
+                        </button>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img 
+                        src="https://picsum.photos/600/700?random=1" 
+                        alt="Modelo con ropa urbana" 
+                        class="w-full h-auto rounded-lg"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">CATEGORÍAS DESTACADAS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer">
+                    <img 
+                        src="https://picsum.photos/400/500?random=2" 
+                        alt="Ropa para hombre" 
+                        class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">HOMBRE</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer">
+                    <img 
+                        src="https://picsum.photos/400/500?random=3" 
+                        alt="Ropa para mujer" 
+                        class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">MUJER</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg cursor-pointer">
+                    <img 
+                        src="https://picsum.photos/400/500?random=4" 
+                        alt="Accesorios" 
+                        class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                        loading="lazy"
+                    >
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">ACCESORIOS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">PRODUCTOS DESTACADOS</h2>
+                <a href="#" class="text-black font-semibold hover:underline">Ver todos</a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="featured-products">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 bg-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">ÚNETE A NUESTRA COMUNIDAD</h2>
+            <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Recibe las últimas noticias sobre nuevas colecciones, ofertas exclusivas y tendencias urbanas.</p>
+            <div class="max-w-md mx-auto flex">
+                <input 
+                    type="email" 
+                    placeholder="Tu correo electrónico" 
+                    class="flex-1 px-4 py-3 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-white"
+                >
+                <button class="bg-white text-black px-6 py-3 font-semibold rounded-r-lg hover:bg-gray-200 transition-colors">
+                    Suscribirse
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">URBANSTYLE</h3>
+                    <p class="text-gray-400 mb-4">Tu destino para la moda urbana más auténtica y contemporánea.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold mb-4">ENLACES RÁPIDOS</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Sobre Nosotros</a></li>
+                        <li><a href="#" class="hover:text-white">Contacto</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Carreras</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h4 class="font-semibold mb-4">ATENCIÓN AL CLIENTE</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Centro de Ayuda</a></li>
+                        <li><a href="#" class="hover:text-white">Envíos y Entregas</a></li>
+                        <li><a href="#" class="hover:text-white">Devoluciones</a></li>
+                        <li><a href="#" class="hover:text-white">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="font-semibold mb-4">CONTACTO</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> Calle Urbana 123, Ciudad</li>
+                        <li><i class="fas fa-phone mr-2"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@urbanstyle.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 UrbanStyle. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+        <div class="absolute right-0 top-0 h-full w-96 bg-white shadow-xl">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-bold">Tu Carrito</h3>
+                    <button onclick="closeCart()" class="text-gray-500 hover:text-black">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div id="cart-items" class="space-y-4">
+                    <!-- Cart items will be loaded here -->
+                </div>
+                <div class="mt-8 border-t pt-4">
+                    <div class="flex justify-between mb-4">
+                        <span>Total:</span>
+                        <span id="cart-total" class="font-bold">$0.00</span>
+                    </div>
+                    <button class="w-full bg-black text-white py-3 font-semibold hover:bg-gray-800 transition-colors">
+                        Proceder al Pago
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
