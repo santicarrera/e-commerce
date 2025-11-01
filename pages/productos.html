@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanStyle - Tienda de Ropa Urbana</title>
+    <meta name="description" content="Catálogo de ropa urbana con las últimas tendencias en moda streetwear">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <div class="top-bar-content">
+                    <p class="top-bar-text">📦 Envío gratis en compras superiores a $50.000</p>
+                    <div class="top-bar-links">
+                        <a href="#" class="top-bar-link">Contacto</a>
+                        <a href="#" class="top-bar-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="navbar">
+                <div class="navbar-content">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="index.html">URBANSTYLE</a>
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                        <li><a href="products.html" class="nav-link">Productos</a></li>
+                        <li><a href="#categorias" class="nav-link">Categorías</a></li>
+                        <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="Buscar productos..." class="search-input">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+
+                    <!-- Admin Button -->
+                    <div class="header-actions">
+                        <a href="admin.html" class="btn-admin" title="Panel de Administración">
+                            <i class="fas fa-user-shield"></i>
+                        </a>
+                        <button class="menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">STREETWEAR ESENCIAL</h1>
+                    <p class="hero-description">Descubre la nueva colección de ropa urbana diseñada para la ciudad. Estilo, comodidad y autenticidad en cada prenda.</p>
+                    <div class="hero-buttons">
+                        <a href="products.html" class="btn btn-primary">Ver Catálogo</a>
+                        <a href="#ofertas" class="btn btn-secondary">Ver Ofertas</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&h=700&fit=crop" alt="Moda urbana">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="categories" id="categorias">
+        <div class="container">
+            <h2 class="section-title">CATEGORÍAS DESTACADAS</h2>
+            <div class="categories-grid">
+                <a href="products.html?category=hombre" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=400&h=500&fit=crop" alt="Ropa para hombre">
+                    <div class="category-overlay">
+                        <h3 class="category-name">HOMBRE</h3>
+                    </div>
+                </a>
+                <a href="products.html?category=mujer" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&h=500&fit=crop" alt="Ropa para mujer">
+                    <div class="category-overlay">
+                        <h3 class="category-name">MUJER</h3>
+                    </div>
+                </a>
+                <a href="products.html?category=accesorios" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1523359346063-d879354c0ea5?w=400&h=500&fit=crop" alt="Accesorios">
+                    <div class="category-overlay">
+                        <h3 class="category-name">ACCESORIOS</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">PRODUCTOS DESTACADOS</h2>
+                <a href="products.html" class="view-all-link">Ver todos →</a>
+            </div>
+            
+            <div class="products-grid" id="featured-products-grid">
+                <!-- Products will be loaded by JavaScript -->
+                <!-- Aquí se cargarán los productos dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers" id="ofertas">
+        <div class="container">
+            <h2 class="section-title">OFERTAS ESPECIALES</h2>
+            <div class="offers-grid" id="offers-grid">
+                <!-- Offers will be loaded by JavaScript -->
+                <!-- Aquí se cargarán las ofertas dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">ÚNETE A NUESTRA COMUNIDAD</h2>
+                <p class="newsletter-text">Recibe las últimas noticias sobre nuevas colecciones, ofertas exclusivas y tendencias urbanas.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" class="newsletter-input" required>
+                    <button type="submit" class="newsletter-btn">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-column">
+                    <h3 class="footer-title">URBANSTYLE</h3>
+                    <p class="footer-text">Tu destino para la moda urbana más auténtica y contemporánea.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">ENLACES RÁPIDOS</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="footer-link">Contacto</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Trabaja con Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">ATENCIÓN AL CLIENTE</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Centro de Ayuda</a></li>
+                        <li><a href="#" class="footer-link">Envíos y Entregas</a></li>
+                        <li><a href="#" class="footer-link">Cambios y Devoluciones</a></li>
+                        <li><a href="#" class="footer-link">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-column">
+                    <h4 class="footer-heading">CONTACTO</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Urbana 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +54 9 11 1234-5678</li>
+                        <li><i class="fas fa-envelope"></i> info@urbanstyle.com</li>
+                        <li><i class="fab fa-whatsapp"></i> +54 9 11 1234-5678</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 UrbanStyle. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
